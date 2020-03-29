@@ -78,6 +78,7 @@
           <v-text-field
             label="Full Name"
             outlined
+            hint="e.g Xavier Grace"
             v-model="name"
           ></v-text-field>
         </v-col>
@@ -85,6 +86,8 @@
          <v-text-field
             label="Phone Number"
             v-model="phone"
+            counter
+            maxlength="11"
             outlined
           ></v-text-field>
         </v-col>
@@ -97,7 +100,7 @@
           <v-btn
             color="primary"
             text
-            :disabled="this.name.length < 5 || this.phone.length < 5"
+            :disabled="this.name.length < 5 || this.phone.length < 11"
             @click="add"
           >
             Add contact
