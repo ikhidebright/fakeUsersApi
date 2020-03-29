@@ -97,7 +97,7 @@
           <v-btn
             color="primary"
             text
-            :disabled="this.name < 5 && this.phone < 5"
+            :disabled="this.name.length < 5 || this.phone.length < 5"
             @click="add"
           >
             Add contact
