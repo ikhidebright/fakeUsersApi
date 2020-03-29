@@ -24,10 +24,9 @@
         @click=""
       >
         <v-list-item-avatar>
-          <v-icon
-            :class=""
-            v-text=""
-          ></v-icon>
+          <v-icon>
+          mdi-account
+          </v-icon>
         </v-list-item-avatar>
 
         <v-list-item-content>
