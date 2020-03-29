@@ -100,7 +100,6 @@
           <v-btn
             color="primary"
             text
-            :disabled="this.name.length < 5 || this.phone.length < 11"
             @click="add"
           >
             Add contact
