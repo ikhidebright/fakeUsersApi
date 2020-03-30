@@ -125,6 +125,9 @@ import axios from 'axios'
 
     methods: {
       add () {
+        if (this.name.length < 5 || this.phone.length < 11) {
+          alert("Phone Number not valid or Name too short")
+        } else {
         let user = {
           name: this.name,
           phone: this.phone
@@ -133,6 +136,7 @@ import axios from 'axios'
         this.dialog = false
         this.name = null
         this.phone = null
+        }
       },
 
       del (name) {
